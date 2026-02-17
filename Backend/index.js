@@ -11,12 +11,11 @@ const app = express();
 app.use(cookieParser());
 
 // Middleware
-app.use(cors(
-    {
-        origin: 'meeseva-telangana-gov-in-ts-portal.vercel.app', // your React dev server
-        credentials: true
-    }
-));
+app.use(cors({
+    origin: 'https://meeseva-telangana-gov-in-ts-portal.vercel.app',
+    credentials: true
+}));
+
 app.use(express.json());
 
 dotenv.config();
