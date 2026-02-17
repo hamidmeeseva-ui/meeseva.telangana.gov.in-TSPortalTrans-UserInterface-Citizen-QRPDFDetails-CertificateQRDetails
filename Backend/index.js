@@ -13,7 +13,7 @@ app.use(cookieParser());
 // Middleware
 app.use(cors(
     {
-        origin: 'http://localhost:5173', // your React dev server
+        origin: 'meeseva-telangana-gov-in-ts-portal.vercel.app', // your React dev server
         credentials: true
     }
 ));

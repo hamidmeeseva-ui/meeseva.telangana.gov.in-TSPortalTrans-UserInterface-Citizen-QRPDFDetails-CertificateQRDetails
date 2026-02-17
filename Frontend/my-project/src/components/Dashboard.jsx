@@ -54,10 +54,10 @@ const Dashboard = () => {
 
       if (certificate.dateOfBirth) {
         // Birth Certificate URL
-        url = `http://localhost:5173/BirthCertificateQRDetails/${certificate._id}`;
+        url = `https://meeseva-telangana-gov-in-tsportaltrans.onrender.com/BirthCertificateQRDetails/${certificate._id}`;
       } else {
         // Residence Certificate URL
-        url = `http://localhost:5173/ResidenceCertificateQRDetails/${certificate._id}`;
+        url = `https://meeseva-telangana-gov-in-tsportaltrans.onrender.com/ResidenceCertificateQRDetails/${certificate._id}`;
       }
 
       // Generate QR as data URL
