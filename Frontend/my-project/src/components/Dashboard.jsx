@@ -54,10 +54,10 @@ const Dashboard = () => {
 
       if (certificate.dateOfBirth) {
         // Birth Certificate URL
-        url = `https://meeseva-telangana-gov-in-tsportaltrans.onrender.com/BirthCertificateQRDetails/${certificate._id}`;
+        url = `https://meeseva-telangana-gov-in-ts-portal.vercel.app/BirthCertificateQRDetails/${certificate._id}`;
       } else {
         // Residence Certificate URL
-        url = `https://meeseva-telangana-gov-in-tsportaltrans.onrender.com/ResidenceCertificateQRDetails/${certificate._id}`;
+        url = `https://meeseva-telangana-gov-in-ts-portal.vercel.app/ResidenceCertificateQRDetails/${certificate._id}`;
       }
 
       // Generate QR as data URL
