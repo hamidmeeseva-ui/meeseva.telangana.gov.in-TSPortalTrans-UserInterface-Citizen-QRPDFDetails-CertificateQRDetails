@@ -30,8 +30,8 @@ export const registerUser = async (req, res) => {
         // Set token in HTTP-only cookie
         res.cookie('token', token, {
             httpOnly: true,
-            secure: false, // https only in prod
-            sameSite: 'lax',
+            secure: true, // https only in prod
+            sameSite: 'None',
             maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
         });
 
@@ -58,8 +58,8 @@ export const loginUser = async (req, res) => {
             // Set token in HTTP-only cookie
             res.cookie('token', token, {
                 httpOnly: true,
-                secure: false, // https only in prod
-                sameSite: 'lax',
+                secure: true, // https only in prod
+                sameSite: 'None',
                 maxAge: 30 * 24 * 60 * 60 * 1000,
             });
 
