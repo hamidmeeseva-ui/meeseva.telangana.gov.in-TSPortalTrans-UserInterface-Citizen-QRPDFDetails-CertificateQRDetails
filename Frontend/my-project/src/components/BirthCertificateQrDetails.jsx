@@ -138,7 +138,7 @@ const BirthCertificateQrDetails = () => {
                                     Address At the time of Birth :
                                 </td>
                                 <td className="border px-2 py-[0.15rem] sm:py-2">
-                                    {certificate?.birthAddress}
+                                    {certificate?.addressAtBirth}
                                 </td>
                             </tr>
 
