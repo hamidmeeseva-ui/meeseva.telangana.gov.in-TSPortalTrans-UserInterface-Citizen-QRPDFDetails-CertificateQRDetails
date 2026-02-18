@@ -32,7 +32,7 @@ const BirthCertificateQrDetails = () => {
         ["Name :", certificate.name],
         ["Date of Birth :", new Date(certificate.dateOfBirth).toLocaleDateString()],
         ["Place of Birth :", certificate.placeOfBirth],
-        ["Father Name :", certificate.fatherName],
+        ["Father Name :", certificate.fatherOrHusbandName],
         ["Mother Name :", certificate.motherName],
         ["Registration No :", certificate.registrationNo],
         ["Address At Time of Birth :", certificate.birthAddress],
@@ -116,7 +116,7 @@ const BirthCertificateQrDetails = () => {
                                 <td className="border px-2 py-[0.15rem] font-semibold sm:py-2">
                                     Father/Husband Name :
                                 </td>
-                                <td className="border px-2 py-[0.15rem] sm:py-2">{certificate?.fatherName}</td>
+                                <td className="border px-2 py-[0.15rem] sm:py-2">{certificate?.fatherOrHusbandName}</td>
                             </tr>
 
                             <tr className="border">
